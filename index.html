@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Movie Story</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <link rel="stylesheet" href="styles.css">
+        <script src="app.js"></script>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+ 
+    </head>
+    <body id="bootstrap-override">
+        <div class="container-fluid" id="header">
+            <div class="row">
+                <div class="col-sm-5">
+                    <a href="index.html"><img class="img-fluid logo" src="logo.png"></a>
+                </div>
+                <div class="col-sm-1" id="navbar">
+                    <a href="#">Awards</a>
+                </div>
+                <div class="col-sm-1" id="navbar">
+                    <a href="#">Movies</a>
+                </div>
+                <div class="col-sm-1" id="navbar">
+                    <a href="#">Series</a>
+                </div>
+                <div class="col-sm-1" id="icons">
+                    <a href="#" class="fa fa-search"></a>
+                    <a href="#" class="fa fa-user"></a>
+                </div>
+            </div>
+        </div>
+        <div id="movie-image">
+        </div>
+        <div class="col-sm-5" id="movie-info">
+            <div id="defaultInfo">
+                <h6 id="year"></h6>
+                <h1 id="movie-title">Hello There</h1>
+                <p id="movie-notes">This is merely a mock-up based on a design I found on Dribbble, many of the elements are merely for display and have no functionality. That being said, you can click one of the posters on the right to get some information about each of the movies.</p>
+                <a href="https://dribbble.com/shots/14580821-Movie-Story-Website" class="btn btn-outline-dark" id="watch-trailer" role="button">Original Dribbble Post</a>
+            </div>
+            <div id="shawshankInfo">
+                <h6 id="year">1994</h6>
+                <h1 id="movie-title">The Shawshank Redemption</h1>
+                <p id="movie-notes">Andy Dufresne (Tim Robbins) is sentenced to two consecutive life terms in prison for the murders of his wife and her lover and is sentenced to a tough prison. However, only Andy knows he didn't commit the crimes. While there, he forms a friendship with Red (Morgan Freeman), experiences brutality of prison life, adapts, helps the warden, etc., all in 19 years.</p>
+                <a href="https://www.youtube.com/watch?v=P9mwtI82k6E" class="btn btn-outline-dark" id="watch-trailer" role="button">Watch Trailer</a>
+            </div>
+            <div id="batmanInfo">
+                <h6 id="year">2008</h6>
+                <h1 id="movie-title">The Dark Knight</h1>
+                <p id="movie-notes">With the help of allies Lt. Jim Gordon (Gary Oldman) and DA Harvey Dent (Aaron Eckhart), Batman (Christian Bale) has been able to keep a tight lid on crime in Gotham City. But when a vile young criminal calling himself the Joker (Heath Ledger) suddenly throws the town into chaos, the caped Crusader begins to tread a fine line between heroism and vigilantism.</p>
+                <a href="https://www.youtube.com/watch?v=EXeTwQWrcwY" class="btn btn-outline-dark" id="watch-trailer" role="button">Watch Trailer</a>
+            </div>
+            <div id="godfatherInfo">
+                <h6 id="year">1972</h6>
+                <h1 id="movie-title">The Godfather</h1>
+                <p id="movie-notes">Widely regarded as one of the greatest films of all time, this mob drama, based on Mario Puzo's novel of the same name, focuses on the powerful Italian-American crime family of Don Vito Corleone (Marlon Brando). When the don's youngest son, Michael (Al Pacino), reluctantly joins the Mafia, he becomes involved in the inevitable cycle of violence and betrayal. Although Michael tries to maintain a normal relationship with his wife, Kay (Diane Keaton), he is drawn deeper into the family business.</p>
+                <a href="https://www.youtube.com/watch?v=sY1S34973zA" class="btn btn-outline-dark" id="watch-trailer" role="button">Watch Trailer</a>
+            </div>
+            <div id="pulpfictionInfo">
+                <h6 id="year">1994</h6>
+                <h1 id="movie-title">Pulp Fiction</h1>
+                <p id="movie-notes">Vincent Vega (John Travolta) and Jules Winnfield (Samuel L. Jackson) are hitmen with a penchant for philosophical discussions. In this ultra-hip, multi-strand crime movie, their storyline is interwoven with those of their boss, gangster Marsellus Wallace (Ving Rhames) ; his actress wife, Mia (Uma Thurman) ; struggling boxer Butch Coolidge (Bruce Willis) ; master fixer Winston Wolfe (Harvey Keitel) and a nervous pair of armed robbers, "Pumpkin" (Tim Roth) and "Honey Bunny" (Amanda Plummer).</p>
+                <a href="https://www.youtube.com/watch?v=s7EdQ4FqbhY" class="btn btn-outline-dark" id="watch-trailer" role="button">Watch Trailer</a>
+            </div>
+            <div id="schindlerInfo">
+                <h6 id="year">1993</h6>
+                <h1 id="movie-title">Schindler's List</h1>
+                <p id="movie-notes">Businessman Oskar Schindler (Liam Neeson) arrives in Krakow in 1939, ready to make his fortune from World War II, which has just started. After joining the Nazi party primarily for political expediency, he staffs his factory with Jewish workers for similarly pragmatic reasons. When the SS begins exterminating Jews in the Krakow ghetto, Schindler arranges to have his workers protected to keep his factory in operation, but soon realizes that in so doing, he is also saving innocent lives.</p>
+                <a href="https://www.youtube.com/watch?v=gG22XNhtnoY" class="btn btn-outline-dark" id="watch-trailer" role="button">Watch Trailer</a>
+            </div>
+        </div>
+        <div class="col-sm-6" id="movie-select">
+            <a href="#"><img src="posters/godfather.jpg" onclick="godfatherShow()" id="godfather-poster"></img></a>
+            <a href="#"><img src="posters/schindler.jpg" onclick="schindlerShow()" id="schindler-poster"></img></a>
+            <a href="#"><img src="posters/pulpfiction.jpg" onclick="pulpfictionShow()" id="pulpfiction-poster"></img></a>
+            <a href="#"><img src="posters/shawshank.jpg" onclick="shawshankShow()" id="shawshank-poster"></img></a>
+            <a href="#"><img src="posters/batman.jpg" onclick="batmanShow()" id="batman-poster"></img></a>
+        </div>
+        <div id="returnButton">
+            <a href="https://ryan-morris-git.github.io/" class="btn btn-outline-dark" id="returnButton" role="button">Return to my Portfolio</a>
+        </div>
+    </body>
+</html>
